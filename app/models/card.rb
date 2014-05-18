@@ -20,6 +20,4 @@ class Card < ActiveRecord::Base
 
   has_many :card_assignments, inverse_of: :card
   has_many :users, through: :card_assignments, source: :user, inverse_of: :cards
-
-  accepts_nested_attributes_for :todo_items
 end
