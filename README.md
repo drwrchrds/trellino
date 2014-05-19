@@ -32,7 +32,7 @@ Make the show, index, and new page for boards. Next, add lists to the boards. Th
 
 * On your index page, give every board a link to its show page.
 * Make the board show page. Add a Backbone route to it. For the moment, just have a board's show page contain the name of the board and a list of its lists. You can just display a list's name, given that at the moment it has no other content.
-  * Remember to display the lists in order of their rank. You might want to overwrite the `comparator` method of the `cards` collection.
+  * Remember to display the lists in order of their rank. You might want to overwrite the `comparator` method of the `lists` collection.
 * When the user creates a board, it should redirect them to the board's show page. You can use the router's `navigate` method for this.
 * Add the ability to create lists, via a new list view.
 * Add the ability to add board members. You should be able to type in a email and the website will add that person, or complain that they don't exist.
